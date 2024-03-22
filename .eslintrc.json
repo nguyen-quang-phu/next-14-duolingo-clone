@@ -1,6 +1,18 @@
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": { "project": ["tsconfig.json"] },
+  "overrides": [
+		{
+			"files": ["__test__/**"],
+			"plugins": ["vitest"],
+			"extends": ["plugin:vitest/recommended"]
+		},
+		{
+      "files": ["e2e/**"],
+			"plugins": ["vitest"],
+			"extends": ["plugin:playwright/recommended"]
+		}
+	],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/strict-type-checked",
