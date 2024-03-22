@@ -1,10 +1,9 @@
-import Link from 'next/link'
- 
+import Link from 'next/link';
+
 export default function Page() {
   return (
     <div>
-      <h1>Home</h1>
-      <Link href="/about">About</Link>
+      <p className="font-bold text-green-500">Hello Harvey</p>
     </div>
-  )
+  );
 }
